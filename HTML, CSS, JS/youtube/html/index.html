@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube API for rest time</title>
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo"><img src="/img/youtube.png" alt=""></div>
+        <div class="search-box">
+            Type and hit enter <input type="text" name="keyword" id="keyword">
+        </div>
+        
+        
+    </header>
+    <div id="buttons">
+        <button class="button-value" onclick="filterProduct('all')">All</button>
+        <button class="button-value" onclick="filterProduct('Playlists')">
+          Playlists
+        </button>
+        <button class="button-value" onclick="filterProduct('Game')">
+          Game
+        </button>
+        <button class="button-value" onclick="filterProduct('Live')">
+          Live
+        </button>
+        <button class="button-value" onclick="filterProduct('News')">
+          News
+        </button>
+      </div>
+      <div id="products"></div>
+    </div>
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <iframe class="modal-content" id="video-frame" width="700" height="415" src="" frameborder="0" allowfullscreen></iframe>
+        <div id="caption"></div>
+    </div>
+    <div id="list-video"></div>
+
+    <footer>
+        <span>Working with Youtube API - FPT Aptech &copy; 2021</span>
+    </footer>
+    <script type="text/javascript" src="/js/index.js"></script>
+</body>
+</html>

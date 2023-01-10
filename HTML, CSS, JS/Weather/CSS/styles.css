@@ -1,0 +1,32 @@
+.container{
+    font-family: 'Roboto' sans-serif;
+    box-sizing: border-box;
+    border:1px solid  ;
+    border-radius: 5px;
+    text-align: center;
+    margin: auto;
+    align-items: center;
+
+}
+.Weather{
+    
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #43AFFC;
+}
+.time{
+    color: #ec7553;
+}
+h2{
+    margin-top: 6px;
+}
+.temperature{
+    font-size: 1.25cm;
+    
+} 
+i{
+    font-size: 1.25cm;
+}
+

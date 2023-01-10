@@ -1,0 +1,266 @@
+*{
+    font-family: "Tahoma";
+    box-sizing: border-box;
+}
+ul#main-menu{
+    display: flex;
+    background: rgb(235, 229, 229);
+}
+ul#main-menu a{
+    margin-left: 24px;
+    border-radius: 8px;
+    margin: 12px;
+    padding: 5px 10px;
+    display: block;
+    color: #050000;
+}
+ul#main-menu li:hover a{
+    color: #f34141;
+}
+footer{
+    height: 50px;
+    text-align: center;
+}
+header{
+    padding: 15px;
+}
+header .logo img{
+    float: left;
+    width: 30%;
+    width: 100px;
+}
+header .search-box{
+    padding: 25px 0px;
+    float: left;
+    width: 70%;
+}
+header::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.button-value {
+    border: 2px solid #b6b6ba;
+    padding: 1em 2.2em;
+    border-radius: 1.3em;
+    background-color: #f2f2f2;
+    color: #080808;
+    cursor: pointer;
+    margin-left: 12px;
+    
+  }
+  .button-value:hover{
+    color: #888888;
+  }
+  .active {
+    background-color: #0f0f0f;
+    color: #d5cece;
+  }
+  #products {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 1.5em;
+    padding: 2em 0;
+  }
+  .card {
+    background-color: #ffffff;
+    max-width: 18em;
+    margin-top: 1em;
+    padding: 1em;
+    border-radius: 5px;
+    box-shadow: 1em 2em 2.5em rgba(1, 2, 68, 0.08);
+  }
+  .image-container {
+    text-align: center;
+  }
+  img {
+    max-width: 100%;
+    object-fit: contain;
+    height: 15em;
+  }
+  .container {
+    padding-top: 1em;
+    color: #110f29;
+  }
+  .container h5 {
+    font-weight: 500;
+  }
+  .hide {
+    display: none;
+  }
+  @media screen and (max-width: 720px) {
+    img {
+      max-width: 100%;
+      object-fit: contain;
+      height: 10em;
+    }
+    .card {
+      max-width: 10em;
+      margin-top: 1em;
+    }
+    #products {
+      grid-template-columns: auto auto;
+      grid-column-gap: 1em;
+    }
+  }
+.form-group {
+    margin: 10px 5px;
+}
+
+.form-group label:first-child {
+    width: 15%;
+    float: left;
+}
+
+.form-group lable {
+    float: left;
+}
+
+.form-group .form-control {
+    float: left;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.form-group::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.long-input {
+    width: 40%;
+}
+
+.normal-input {
+    width: 30%;
+}
+
+.short-input {
+    width: 20%;
+}
+
+.error-msg {
+    color: red;
+}
+
+.success-msg {
+    color: green;
+}
+
+#list-video {
+    padding: 10px;
+}
+
+#list-video::after {
+    clear: both;
+    display: table;
+    content: "";
+}
+
+.video {
+    width: 30%;
+    float: left;
+    margin: 0 15px;
+    text-align: center;
+}
+
+.video img {
+    border-radius: 5px;
+    box-shadow: 3px 3px 10px #888888;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.video img:hover {
+    opacity: 0.7;
+}
+
+.video .title {
+    font-weight: bold;
+    margin-top: 10px;
+    height: 47px;
+    overflow: auto;
+    text-align: center;
+    cursor: pointer;
+}
+
+.search-box {
+    margin: 15px;
+}
+
+.search-box input {
+    width: 50%;
+    height: 30px;
+    border-radius: 5px;
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.9);
+  }
+  
+  .modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+  }
+  
+  #caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+  }
+  
+  .modal-content, #caption {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+  
+  @-webkit-keyframes zoom {
+    from {-webkit-transform: scale(0);}
+    to {-webkit-transform: scale(1);}
+  }
+  
+  @keyframes zoom {
+    from {transform:scale(0)}
+    to {transform: scale(1);}
+  }
+  
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .close:hover, .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  @media only screen and (max-width: 700px) {
+    .modal-content {
+      width: 100%;
+    }
+  }

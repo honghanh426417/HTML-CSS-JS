@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up with Google</title>
+    <link rel="stylesheet" href="/btvn28/signup.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+
+            <div class="left">
+                <div class="form">
+                    <img src="/download.png" alt="">
+                    <h3>Tạo Tài khoản Google</h1>
+                    <h4>Tiếp tục với Gmail</h2>
+                    <form action="">
+                        <input type="text"
+                               name="first-name"
+                               id="first-name"
+                               placeholder="Họ"
+                               required
+                               value="" onkeyup="this.setAttribute('value', this.value);">
+                        <span class="error">
+                            <i class="fa-regular fa-circle-exclamation"></i>
+                            <!-- <p class="error-text">Nhập họ và tên</p> -->
+                        </span>
+
+                        <input type="text"
+                               name="last-name"
+                               id="last-name"
+                               placeholder="Tên"
+                               required
+                               value="" onkeyup="this.setAttribute('value', this.value);">
+                        <span class="error">
+                                <i class="fa-regular fa-circle-exclamation"></i>
+                                <!-- <p class="error-text">Nhập tên của bạn</p> -->
+                        </span>
+                        <div class="username">
+                        <input type="email"
+                               name="email"
+                               id="email"
+                               placeholder="Tên người dùng"
+                               required
+                               value="" onkeyup="this.setAttribute('value', this.value);">
+                               
+                         <span class="error">
+                                <i class="fa-regular fa-circle-exclamation"></i>
+                                <!-- <p class="error-text">Xin lỗi, tên người dùng của bạn phải nằm trong khoảng độ dài kí tự giữa 6 và 30</p> -->
+                         </span>
+                           <label for="email">@gmail.com</label>
+                        
+
+                        <span>Bạn có thể sử dụng chữ cái, số và dấu chấm</span>
+                        <br>
+                        </div>
+                        
+                        <input type="password"
+                               name="password"
+                               id="password"
+                               placeholder="Mật khẩu"
+                               required
+                               value="" onkeyup="this.setAttribute('value', this.value);">
+                        <span class="error">
+                                <i class="fa-regular fa-circle-exclamation"></i>
+                                <!-- <p class="error-text">Nhập lại mật khẩu</p> -->
+                        </span>
+                        <input type="password"
+                               name="repassword"
+                               id="password"
+                               placeholder="Xác nhận"
+                               required
+                               value="" onkeyup="this.setAttribute('value', this.value);">
+                        <span class="error">
+                                <i class="fa-regular fa-circle-exclamation error-icon"></i>
+                                <!-- <p class="error-text">Các mật khẩu không khớp. Hãy thử lại!!</p> -->
+
+                        </span>
+                        <span>Sử dụng 8 ký tự trở lên và kết hợp chữ cái, chữ số và biểu tượng</span>
+                        <br>
+
+                        <input type="checkbox" class="checkbox" onclick="show()">
+                            Hiện mật khẩu
+
+                        <div>
+                            <button id="signin" type="submit">Đăng nhập</button>
+                            <button id="next" type="submit">Tiếp theo</button>
+
+                        </div>
+                    </form>
+                </div>
+                
+            </div>
+
+            <div class="right">
+                <!-- <link rel="stylesheet" href="devtools://devtools/bundled/devtools_app.html?remoteBase=https://chrome-devtools-frontend.appspot.com/serve_file/@2a558545ab7e6fb8177002bf44d4fc1717cb2998/&can_dock=true&panel=elements#:~:text=Current%20source%3A-,https%3A//ssl.gstatic.com/accounts/signup/glif/account.svg"> -->
+              <img src="/images.png" alt=""/>
+              <p>Một tài khoản. Hoạt động trên mọi sản phẩm và dịch vụ của Google</p>
+            </div>
+        </div>
+    </header>
+    <footer>
+        <select name="" id="Language">
+            <option value="Tieng_Viet">Tiếng Việt</option>
+            <option value="English_US">English(US)</option>
+            <option value="English_UK">English(UK)</option>
+            <option value="France">France</option>
+            <option value="Chinese">Chinese</option>
+            <option value="Korea">Korea</option>
+            <option value="ThaiLand">ThaiLand</option>
+            <option value="Philipinese">Philipinese</option>
+            
+        </select>
+        
+        <div class="service">
+            <a href="https://support.google.com/accounts?hl=vi&visit_id=638051972779965044-2831550892&rd=2&p=account_iph#topic=3382296">
+                <button>Trợ giúp</button></a>
+            <a href="https://policies.google.com/privacy?gl=VN&hl=vi">
+                <button>Bảo mật</button></a>
+            <a href="https://policies.google.com/terms?gl=VN&hl=vi">
+                <button>Điều khoản</button></a>
+        </div>
+    </footer>
+    <script src="/btvn28/11/signup.js"></script>
+</body>
+</html>

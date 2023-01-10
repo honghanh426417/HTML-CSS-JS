@@ -1,0 +1,195 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box ;
+    font-family: 'Roboto', sans-serif;
+}
+header{
+    background: #fff;
+    
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+    margin:  92px 100px 20px 100px;
+}
+.container{
+    max-width: 800px;
+    min-height:500px;
+    border: 1px solid #b2bec3;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 2rem;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    
+    
+    
+}
+.left{
+    flex-basis: 60%;
+}
+div .right{
+    flex-basis: 40%;
+    
+    
+}
+.right img{
+    width: 100%;
+    
+    
+    
+}
+.right p{
+    text-align: center;
+    margin: auto;
+}
+.left img{
+    width: 90px;
+}
+h3{
+    color:#202124 ;
+    margin: 1rem 0;
+    font-weight: normal;
+    font-size: 1.4rem
+}
+h4{
+    color: #303133;
+    margin-bottom: 37px;
+    font-size: 0.99rem;
+    font-weight: inherit;
+}
+form input[type="text"]{
+    width: 49%;
+    /* width: 168px; */
+    /* height: 33px; */
+    padding: 0.5rem 0.7rem;
+    outline: none;
+    border: 1px solid #b2bec3;
+    margin-bottom: 1.5rem;
+    border-radius: 5px;
+
+}
+form input[type="email"]{
+    width: 100%;
+    padding: 0.5rem 0.7rem;
+    outline: none;
+    border: 1px solid #b2bec3;
+    
+    border-radius: 5px;
+
+}
+#email{
+    position: relative;
+}
+#email label{
+    /* margin-left: -100px; */
+    position: absolute;
+    right: 0;
+    font-size: 0.8rem;
+    padding: 0.5rem 0.7rem;
+}
+form span{
+    color: #8d8f93;
+    width: 100%;
+    font-size: 0.8rem;
+}
+
+
+
+form input[type="checkbox"]{
+    margin-top: 14px;
+    margin-bottom:76px ;
+    font-weight: inherit;
+    cursor: pointer;
+}
+button{
+    padding: 0.5rem 1.3rem;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    
+}
+
+#signin{
+    background:#fff ;
+    color: #1b80fb;
+    float: left;
+    
+    transition: all 0.1s ease;
+}
+#signin:hover{
+    background-color: #f3f4f4;
+}
+#next{
+    background: #1b72e7;
+    color: #fff;
+    float: right;
+}
+#next:hover{
+    background-color: #024eb1;
+}
+/* footer{
+    position: relative;
+    width: 450px;
+    
+    margin-top: 15px; 
+    text-align: center;
+
+    
+}
+
+#language{
+
+    border: none;
+    float: left;
+    width: 40%;
+    height: 2rem;
+    margin-left: 200px;
+    outline: none;
+
+    
+    
+  }
+  
+.service{
+    float: right;
+    outline: none;
+    color: rgb(36, 33, 33);
+    border: none;
+    text-decoration:none;
+    margin-right: 0.2rem;
+
+    
+}
+
+.service button{
+    border: none;
+    background: #fff;
+    color: #8d8f93;
+    float: right;
+    
+} */
+footer {
+    position: relative;
+    width: 450px;
+    margin: auto;
+    margin-top: 15px;
+  }
+#language {
+    border: none;
+    float: left;
+    width: 40%;
+    height: 2rem;
+  }
+  .service {
+    float: right;
+  }
+  .service button {
+      border: none;
+      background-color: white;
+      padding: 0px;
+      margin-right: 5px;
+  }

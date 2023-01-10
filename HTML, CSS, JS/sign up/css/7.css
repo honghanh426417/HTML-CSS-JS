@@ -1,0 +1,143 @@
+*{
+    box-sizing: border-box;
+}
+a{
+    
+    text-decoration: none;
+}
+a:visited {
+    color: #1a73e8;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+}
+#wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+}
+.box .logo{
+    margin-left: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 16px;
+}
+img{
+    max-width: 100px;
+}
+form{
+    border: 1px solid #dadce0;
+    border-radius: 5px;
+    padding: 30px;
+}
+h2{
+    text-align: center;
+    font-size: 24px;
+    font-weight: 500;
+}
+#p1 {
+    text-align: center;
+}
+
+.form-group{
+    
+    margin-bottom: 15px;
+    position: relative;
+}
+input{
+    height: 50px;
+    width: 100%;
+    outline: none;
+    border: 1px solid #dadce0;
+    padding: 10px auto ;
+    border-radius: 5px;
+    font-size: inherit;
+    color: #202124;
+    transition: all 0.3s ease-in-out;
+}
+label{
+    
+    position: absolute;
+    padding: 0px 5px ;
+    left: 5px;
+    top: 50%;
+    pointer-events: none;
+    transform: translateY(-50%);
+    background: #fff;
+    transition: all 0.3s ease-in-out;
+}
+.form-group input:focus {
+    
+    border: 2px solid #1a73e8;
+}
+.form-group input:focus + label, .form-group input:valid + label{
+    top: 0px;
+    font-size: 13px;
+    font-weight: 500;
+    color: #1a73e8;
+}
+
+input#btn-login{
+    background: #1a73e8;
+    color: #fff;
+    cursor: pointer;
+}
+input#btn-login:hover{
+    opacity: 0.85;
+}
+#next{
+    border: none;
+    outline: none;
+    color: #fff;
+    background-color: #1a73e8;
+    padding: 0.625rem 1.25rem;
+    cursor: pointer;
+    border-radius: 0.312rem;
+    font-size: 1rem;
+    float: right;
+  }
+  
+  #next:hover {
+    background-color: #287ae6;
+    box-shadow: 0 1px 1px 0 rgba(66,133,244,0.45), 0 1px 3px 1px rgba(66,133,244,0.3);
+    
+  }
+  #create{
+    border: none;
+    outline: none;
+    color: #1a73e8;
+    background-color: #fff;
+    padding: 0.625rem 1.25rem;
+    cursor: pointer;
+    border-radius: 0.312rem;
+    font-size: 1rem;
+    float: left;
+  }
+  #create:hover{
+    background-color: rgb(241, 241, 241);
+    box-shadow: 0 1px 1px 0 rgba(66,133,244,0.45), 0 1px 3px 1px rgba(66,133,244,0.3);
+  }
+  .vung2 {
+    position: relative;
+    width: 450px;
+    margin: auto;
+    margin-top: 15px;
+  }
+  .vung2 select {
+    border: none;
+    float: left;
+    width: 40%;
+    height: 2rem;
+  }
+  .vung2 .help {
+    float: right;
+  }
+  .vung2 .help  button {
+      border: none;
+      background-color: white;
+      padding: 0px;
+      margin-right: 5px;
+  }
